@@ -14,14 +14,14 @@ h2{
 .writer{
     font-size: 20px;
     text-align: center;
-    text-decoration: line-through;
+    text-decoration: line-through overline underline ;
     color: red;
     text-shadow: 1px 1px 2px;
 }
 .write{
     font-size: 30px;
     text-align: center;
-    text-decoration: line-through;
+    text-decoration: line-through overline underline ;
     color: red;
     text-shadow: 1px 1px 2px;
     font-weight: bold;
@@ -31,7 +31,7 @@ h2{
 .last{
     font-size: 15px;
     text-align: center;
-    text-decoration: line-through;
+    text-decoration: line-through overline underline ;
     color: red ;
     text-shadow: 1px 1px 2px;
    
