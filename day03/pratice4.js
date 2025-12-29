@@ -103,4 +103,3 @@ let waitingList = [`김민준` , `이서연` , `박도윤` , `최지우`]
 let 마지막인덱스 = waitingList.length-1 
 console.log(`결과10 : 마지막 대기자는 ${ waitingList[ 마지막인덱스] }`)
 */ 
-// 문제 10개
