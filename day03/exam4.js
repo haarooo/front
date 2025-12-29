@@ -80,9 +80,21 @@ document.querySelector(`h3`).innerHTML=t3
 
 // [지문9] 두 사람의 이름을 prompt함수로 각 입력받아서 만일 이름이 '유재석' 이면 뒤에 (방장) 이라고 이름 뒤에 붙이고 아니면 생략한다.  HTML의 <ol> 에 결과를 출력하시오.
 
-let n1 = (prompt( ` 이름1 : `))
-let n2 = (prompt( ` 이름2 : `))
-let n3 = ( n1 == `유재석` ? `유재석(방장)` : ``)
+/*
+let n1 = prompt( ` 이름1 : `)
+let n2 = prompt( ` 이름2 : `)
+let n3 = ( n1 == `유재석`|| n2 ===`유재석` ? `유재석(방장)` : ``)
 console.log( ` result9 : ${n3}`)
 document.querySelector(`ol`).innerHTML=n3
 console.log
+*/
+/*
+let name1 = prompt(` 이름1 :`)
+let name2 = prompt(` 이름2 :`)
+name1+=name2 ==`유재석` ? `(방장)` : `` ;
+name2+=name2 ==`유재석` ? `(방장)1`: `` ;
+let result14 = `<li> ${name1}</li>
+                <li> ${name2}</li>`
+document.querySelector(`ol`).innerHTML=result14  
+console.log(result14)     
+*/
