@@ -1,0 +1,51 @@
+.title{
+    font-family: "맑은 고딕" ,"굴림";
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    
+
+}
+/* 외부폰트: 구글폰트(영문), 눈누 */
+
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+.content{
+    font-family: GMarketSans;
+    color: purple;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    line-height: 160%;
+}
+
+.writer{
+    text-align: center; /*content 내용물 갈 정렬 */
+    text-decoration: underline; /* line -through(취소선)*/
+    text-shadow: 0px 0px 5px gray; /* 텍스트그림자 x축: 양수->오른쪽 음수-> 왼쪽 y축: 양수-> 아래 음수-> 위 */
+    color: green 
+    color: rgb(140, 200, 200);
+    color: #000000; 
+    
+
+
+
+
+}
