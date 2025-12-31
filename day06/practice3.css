@@ -1,0 +1,98 @@
+
+.배경{
+background-color: #f2f4f7;;
+width: 1017px; height: 720px;
+
+}
+.소배경{
+ width: 937px; height: 536px;
+ display: flex;
+}
+
+.로고 > img{
+    width: 320px ;
+    height: 106px;
+    margin: 150px -5px 0px; 
+
+}
+.소개{
+    font-size: 24px;
+    margin-top: -20px;
+    margin-left: 23px;
+}
+
+.로그인창{
+    width: 360px; height: 330px ;
+    text-align: center ; /* 하위요소 가운데 배치*/
+    margin-top: 100px;
+    padding: 20px;
+    background-color: white ;
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 130px;
+    margin-right: -40px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px # gray ;
+}
+
+.입력구역 > input{
+    padding: 11px 8px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #eeeeee;
+    width:  354px ; height: 30px;
+    font-size: 16px;
+    
+}
+
+.입력구역 > button{
+    padding: 3px 16px ; 
+    background-color: #0866ff; /*배경색*/
+    color: white; /* 글꼴색상 */
+    border: none; /* 테두리제거*/
+    border-radius: 6px ;
+    width: 364px ; height: 50px;
+    font-size: 20px;
+}
+.입력구역 > .비밀{
+    font-size: 14px ;
+    padding: 20px ;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+    
+}
+.입력구역 > .계정{
+    
+    background-color: #42B72A ;
+    width: 140px; height: 45px;
+    margin-left: 123px;
+    border-radius: 5px;;
+}
+.페이지{
+    margin-left: 210px;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+.비밀 > a{
+    text-decoration: none;
+    color: blue;
+}
+.계정 > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.페이지 > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
