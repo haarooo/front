@@ -1,0 +1,36 @@
+
+
+.상품{
+    border: 2px solid #eeeeee;
+    width: 300px;
+}
+
+.상품이미지 > img{
+    width: 296px;
+    object-fit: cover;
+}
+.제목{
+    margin-top:1px ;
+    padding: 15px 0px ;
+    font-weight: bold ;
+    font-size: 15px ;
+}
+.가격{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 0px;
+}
+.설명{
+    font-size: 13px;
+    padding: 10px 0px;
+}
+.오렌지색상{
+    color: orange;
+}
+.기타{
+    padding: 10px 0px;
+}
+.상품정보{
+    padding: 5px 10px;
+    border-top: 1px solid #eeeeee;
+}

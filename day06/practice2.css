@@ -1,0 +1,35 @@
+body{
+    background-color: pink;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.제목{
+    border: 2px solid white ;
+    border-radius: 200px;
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px ;
+    margin: 10px;  
+}
+.이미지 > img{
+    width: 200px; height: 200px;
+    border-radius: 200px;
+    margin: 20px 0px;
+}
+
+.소개{
+    font-size: 15px;
+}
+.기타{
+    margin: 20px 0px;  
+    background-color: skyblue;
+    padding: 12px;
+    border-radius: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
