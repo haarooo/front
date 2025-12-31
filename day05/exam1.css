@@ -1,0 +1,49 @@
+/* 전체 선택자 */
+*{
+    border : solid 3px red ;   /* 테두리 : 선종류 선굵기 선색상 */
+    padding: 10px;  /* 안쪽 여백 */
+}
+/* 클래스 선택자 */
+.경기도{
+    border-top : solid 1px orange ; /* 위쪽 테두리 */
+    border-right: dotted 2px blue; /* 오른쪽 테두리 */
+    border-bottom: dashed 3px black; /* 아래쪽 테두리 */
+    border-left: double 4px green; /* 왼쪽 테두리*/
+    border-radius : 10px 15px 20px 25px ; /* 둥근 모서리(시계방향-> 왼쪽상단부터 */
+    box-shadow : 3px 3px 2px red ; /* 그림자 */
+    width: 500px; /* 가로 사이즈 */
+    height: 500px; /* 세로 사이즈 */
+    text-align: center;
+}
+
+.안양시{
+    padding-top : 20px ; /* (테두리)안쪽 여백 */
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    margin-top: 50px; /* (테두리)바깥 여백 */
+    margin-right: 40px; 
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.만안구{
+    /* 가로 사이즈 고정 , 만일 생략시 100%(부모크기) */
+    width: 200px;
+    padding: 10px; margin: 10px;
+    box-sizing: border-box; /* 구역 크기 : content+border+padding*/
+    box-sizing: content-box; /* 구역 크기(기본값) : content */
+    margin : 0 auto ; /* 바깥 여백 이용한 구역 가로 가운데 정렬 */
+    /* 0 : 위아래 여백없음 , auto : 왼쪽오른쪽 자동 뜻*/
+    /* 주의할점 : width가 100% 이거나 생략시 불가능 */
+    background-color: pink; /* 배경색 */
+}
+/* input , img 등 정렬 주의 : 상위요소 정렬 */
+.사진{
+    width: 50px;
+    /* img 선택자로 직접 text-align 적용안됨 */
+    text-align: center; /* 불가능 */
+}
+.input{
+    width: 100px;
+    margin: 0 auto; /* 불가능 */
+}

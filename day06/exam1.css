@@ -1,0 +1,63 @@
+.box{
+    border: 1px solid red;
+    width: 100px; padding: 10px;
+}
+.flexbox1{
+    display: flex; /* 하위 요소에 대해 */
+    border: 1px solid blue;
+    width: 250px; /* 각 자식들이 100px * 3 = 300 */
+    flex-wrap: nowrap; /*기본값 : 하위 요소가 넘치면 자동으로 하위 요소들 크기 조정 */
+}
+.flexbox2{
+    border: 1px solid blue;
+    width: 250px;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.flexbox3{
+    border: solid blue;
+    display: flex;
+    flex-direction: row /* 하위요소 가료배치, column세로배치 */
+}
+.flexbox4{
+    border: solid blue;
+    display: flex;
+    flex-direction: column;
+}
+.flexbox5{
+    border: solid blue;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flexbox6{
+    border: solid blue;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flexbox7{
+    border: solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox8{ /*양 끝 여백 주고 정렬 */
+    border: solid blue;
+    display: flex;
+    justify-content: space-around;
+}
+.flexbox9{ /*양 끝 여백없이  정렬 */
+    border: solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox10{ /*양 끝 여백과 사이 여백 균등하게 정렬 */
+    border: solid blue;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
