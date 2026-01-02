@@ -19,12 +19,15 @@ for( let 단 = 2 ; 단 <= 9 ; 단++) // 단이 2부터 9까지 1씩 증가
 //**                  2                1 2      //star 1부터 현재 line까지 1씩 증가하면서 "*" 출력   
 //***                 3                1 2 3    //line 1부터 3까지 1씩 증가하면서 줄바꿈(\n)
 
-
+/*
 let output = "" ;
 for( let line = 1 ; line <=5 ; line++){
-    for( let star =  1 ; star <= line ; star++){output = output + "*"} output = output + "\n"
+    for( let star =  1 ; star <= line ; star++){
+        output = output + "*"
+    } 
+    output = output + "\n"
 }console.log(output)
-
+*/
 
 
 // 반복문 자주 사용되는 키워드

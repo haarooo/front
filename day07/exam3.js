@@ -38,14 +38,14 @@ for 반복문과 if 조건문을 사용하여, 1부터 20까지의 숫자 중 �
 /*문제 6: 배열 요소의 합계와 평균 구하기
 다음 학생들의 점수가 담긴 배열이 있습니다. for 반복문을 사용하여 모든 점수의 합계와 평균을 계산하여 콘솔에 출력하시오.
 let scores = [85, 92, 78, 65, 95]; */
-
+/*
 let scores = [85, 92, 78, 65, 95];
 let sum = 0
 let average = 0
 
 for( let index = 0 ; index <= scores.length -1 ; index++){ sum = sum + scores[index] , average = sum / scores.length }
 console.log(sum , average)
-
+*/
 
 
 /* 문제 7: 특정 조건에서 반복문 탈출하기 (break)
@@ -53,15 +53,51 @@ console.log(sum , average)
 let scores = [77, 82, 100, 54, 96];
 출력 예시: 100점 만점자를 찾았습니다!*/
 
+/*
+let scores = [77, 82, 100, 54, 96];
+
+for( let index = 0 ; index <= scores.length -1 ; index++){
+    let value = scores[index];
+    if( value == 100 ){
+    console.log(`${value}점 만점자를 찾았습니다!`);
+    break;}
+}
+*/
+
+
+
+
 
 
 /*문제 8: 특정 조건 건너뛰기 (continue)
 점수 배열에서 60점 미만(과락)인 점수는 건너뛰고, 60점 이상인 점수만 콘솔에 출력하는 프로그램을 작성하시오.
 let scores = [90, 45, 72, 88, 59, 100];*/
+/*
+let scores = [90, 45, 72, 88, 59, 100];
+for( let index = 0 ; index <= scores.length -1 ; index++){
+    let value = scores[index] ;
+    if(value < 60 ){continue} if( value >= 60){ 
+        console.log(`${value}`)}        
+}
+*/
+
+
+
 
 /*문제 9: 배열에서 특정 값의 개수 세기
 다음 배열에서 'A'형 혈액형을 가진 사람이 몇 명인지 for 반복문을 통해 세고, 그 수를 콘솔에 출력하시오.
 let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A']; */
+/*
+let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A'];
+let countA = 0;
+for( let index = 0 ; index <= bloodTypes.length -1 ; index++){
+    let blood = bloodTypes[index];
+    if(blood == 'A'){countA++}
+}
+console.log(`A형 개수 : ${countA}`)
+*/
+
+
 
 /*문제 10: 학생 점수 시각화하기 
 주어진 학생 이름과 점수 배열을 이용하여, 각 학생의 점수를 동그라미(●, ○)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
@@ -79,3 +115,42 @@ HTML에 학생 이름과 변환된 점수 시각화를 한 줄씩 출력합니�
 유재석 ●●●●●●●●●○
 강호동 ●●●●●●●●○○
 신동엽 ●●●●●●●○○○  */
+
+/*
+let nameArray = ['유재석', '강호동', '신동엽'];
+let scores = [92, 86, 72];
+for(let index = 0 ; index <= nameArray.length -1 ; index++){ console.log(nameArray[index])}
+*/
+//for(let index1 = 0 ; index1 <= scores.length -1 ; index1++)    
+
+let nameArray = ['유재석', '강호동', '신동엽'];
+
+let scores = [92, 86, 72];
+
+let output = "" // 빈 문자열 선언 
+
+for( let index = 0 ; index <= nameArray.length -1 ; index++  ){
+
+    let name = nameArray[index];
+
+    output += `<div> ${ name } `; //  HTML 문자열 ( 이름 ) 추가 
+
+    let score = scores[index];
+
+    let black = parseInt( score / 10 ); // 92/10 -> 9.2 -> parseInt(9.2) -> 9
+
+    for( let circle = 1 ; circle <= 10 ; circle++ ){
+
+        // 동그라미는 1부터 10이하까지 1씩증가 ( 총10번 )
+
+        if( circle <= black ){ output += `<span>●</span>`}  // 만일 현재 동그라미가 점수보다 작으면 검은
+
+        else{ output += `<span>○</span>`} // 크면 흰
+
+    }
+
+    output += `</div>`
+
+} // for end 
+
+document.write( output );
