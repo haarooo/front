@@ -1,0 +1,26 @@
+*{
+    border: 1px solid red;
+    padding: 10px;
+    
+}
+/* pc(가로) : 1000 ~ 1400px */
+#header , #main , #footer{
+    width: 1280px;
+    margin: 0 auto;
+}
+/* 하위 요소들 배치 방법 : flex*/
+#main{
+    display: flex;
+    flex-direction: row; /*가로배치 기본값 */
+    flex-wrap: nowrap; /* 자동 줄바꿈처리 안함*/
+    justify-content: space-between;
+}
+#content{ /*높이는 내용물 만큼 자동크기  100% */
+    width: 830px ; /* 고정 : px 비율: %*/
+}
+#sidebar{
+    width: 420px;
+}
+#footer{
+    background-color: lightgray;
+}
