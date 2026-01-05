@@ -116,41 +116,17 @@ HTML에 학생 이름과 변환된 점수 시각화를 한 줄씩 출력합니�
 강호동 ●●●●●●●●○○
 신동엽 ●●●●●●●○○○  */
 
-/*
 let nameArray = ['유재석', '강호동', '신동엽'];
-let scores = [92, 86, 72];
-for(let index = 0 ; index <= nameArray.length -1 ; index++){ console.log(nameArray[index])}
-*/
-//for(let index1 = 0 ; index1 <= scores.length -1 ; index1++)    
+let scores4 = [92, 86, 72];
 
-let nameArray = ['유재석', '강호동', '신동엽'];
-
-let scores = [92, 86, 72];
-
-let output = "" // 빈 문자열 선언 
-
-for( let index = 0 ; index <= nameArray.length -1 ; index++  ){
-
-    let name = nameArray[index];
-
-    output += `<div> ${ name } `; //  HTML 문자열 ( 이름 ) 추가 
-
-    let score = scores[index];
-
-    let black = parseInt( score / 10 ); // 92/10 -> 9.2 -> parseInt(9.2) -> 9
-
-    for( let circle = 1 ; circle <= 10 ; circle++ ){
-
-        // 동그라미는 1부터 10이하까지 1씩증가 ( 총10번 )
-
-        if( circle <= black ){ output += `<span>●</span>`}  // 만일 현재 동그라미가 점수보다 작으면 검은
-
-        else{ output += `<span>○</span>`} // 크면 흰
-
-    }
-
-    output += `</div>`
-
+let html = ``; // html 마크업들과 데이터들을 저장할 변수 
+for( let index = 0 ; index <= nameArray.length - 1 ; index++ ){
+    html += nameArray[ index ]  
+    let b = parseInt( scores4[index] / 10 ) ; // (4) 점수의 몫 구하기 , 몫 만큼 검은별 , parseInt( 값 / 수 ); 
+    for( let i = 1 ; i <= 10 ; i++ ) { // 몫 만큼 검은동그라미 출력하기
+        if( i <= b ){ html += "●"; } 
+        else{ html += "○"; }
+    } // for end 
+    html += "<br/>"; // 학생이 바뀌면 줄바꿈처리 console : \n , HTML : <br/>
 } // for end 
-
-document.write( output );
+document.write( html );

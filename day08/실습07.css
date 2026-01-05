@@ -1,0 +1,116 @@
+*{ padding: 0px; margin: 0px; } 
+*{ box-sizing: border-box; } 
+a{ text-decoration: none; color: black; } 
+li{ list-style-type: none;} 
+
+
+#header{
+    width: 1280px; 
+    margin: 0px auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+#header > .menu > ul{ 
+    display: flex; justify-content: flex-end;
+}
+.top-menu > li{ font-size: 12px ; margin: 10px 3px; }
+.main-menu > li{ 
+    font-size: 20px; font-weight: bold; 
+    margin: 10px 0px 30px 80px ; 
+}
+
+
+#main-img > img{  width: 100%;
+ } 
+
+
+#main{
+    width: 1280px; margin: 20px auto; 
+    display: flex; justify-content: space-between;
+}
+#main > .sidebar{ width: 250px; } 
+#main > .content{ 
+    width: 1000px; 
+    display: flex;
+    justify-content: space-between;
+} 
+#main > .content > .leftbox , .rightbox{
+    width: 495px;
+
+}
+
+.sidebar > .title{
+    background-color: #0ca9a2; color: white;
+    font-size: 20px; padding: 10px;
+}
+.sidebar > .comment{ padding: 5px 0px; line-height: 150%; } /* 줄간격*/
+.sidebar > .searchbox > input{
+    border-radius: 10px; 
+    padding: 5px;
+    width: 180px;
+}
+.sidebar > .searchbox > button{ padding: 4px; } 
+.sidebar > .sub-title{
+    border-top: 2px solid black;  border-bottom: 1px solid #eeeeee;
+    margin-top: 30px; padding: 10px 0px; 
+    font-size: 18px;
+}
+.sidebar > .sub-menu > li{ padding: 5px; }
+
+.sub-title{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+.board > li{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+.board{
+    margin-bottom: 10px;
+}
+
+.제품목록{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.제품{
+    padding: 20px;
+    font-size: 12px;
+}
+#footer{
+    
+    background-color: navy;
+}
+.footerinner{
+    width: 1280px;
+    margin: 0 auto;
+}
+.footer-head > ol{
+    color: white;
+    display: flex;
+    padding-top: 10px;
+}
+.footer-head > ol > li{
+    margin-right: 20px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer-bottom > .footer-content{
+    
+    color: white;
+    margin-top: 10px;
+}
+
+
+
