@@ -10,14 +10,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    right: -1500px;
+    top: 700px;
 }
+
 .sub-menu > ul > li{
     width: 70px; height: 70px;
     background-color: black;
-    color: white;
+    color: blue;
     border-radius: 70px;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 14px;
+    font-weight: bold;
+    box-shadow: 0px 10px 8px gray;
+  
 }
+.sub-menu{
+    position: absolute;
+    bottom: 110px;
+    right: 16px;
+    display: none;
+}
+#head2 > ul:hover .sub-menu{
+    display: block;
+}
+.sub-menu > ul > li:nth-of-type(1){
+    background-color: lightcyan;
+} 
+.sub-menu > ul > li:nth-of-type(2){
+    background-color: plum;
+} 
+.sub-menu > ul > li:nth-of-type(3){
+    background-color: lightgreen;
+} 
+.sub-menu > ul > li:nth-of-type(4){
+    background-color: bisque;
+} 
