@@ -1,0 +1,56 @@
+.parent{
+    background-color: red;
+    position: relative;
+    width: 1500px;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.box1{
+    width: 150px; height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+    left: 675px;
+    border-radius: 8px;
+}
+.box2{
+    width: 150px; height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 550px;
+    left: 675px ;
+    border-radius: 8px;
+}
+.box3{
+     width: 150px; height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 150px;
+    left: 375px ;
+    border-radius: 8px;
+}
+.box4{
+     width: 150px; height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 150px;
+    right: 375px;
+    border-radius: 8px;
+}
+.box5{
+     width: 150px; height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 450px;
+    left: 375px;
+    border-radius: 8px;
+}
+.box6{
+     width: 150px; height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 450px;
+    right: 375px;
+    border-radius: 8px;
+}
