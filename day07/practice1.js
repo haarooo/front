@@ -331,7 +331,7 @@ HTML에 차량 번호, 주차 시간, 최종 요금을 한 줄씩 출력합니�
 
 */
 
-
+/*
 let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
 let usageMinutes = [65, 30, 140, 420];
 let html3 = ""
@@ -349,3 +349,5 @@ for( let index = 0 ; index <= carNumbers.length -1 ; index++){
     html3 += `</div>`;
 }
 document.writeln(html3)
+*/
+
