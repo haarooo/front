@@ -1,0 +1,39 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{ /* 선택자 : hover = 해당 요소에 마우스를 올렸을때 반응 */
+    color: red;
+    font-size: 20px;
+}
+a:visited{/* 선택자 : visiter = 크롬내 방문한 적이 있는 링크일때 반응 */
+    color: blue;
+    font-size: 10px;
+}
+a:active{/* 선택자 : active = 해당 요소를 클릭한 순간 반응 */
+    color: yellow;
+    font-size: 30px;
+}
+.box1::before{ /* 선택자 :: before */
+ content: "before";
+ color: blueviolet;
+}
+.box1::after{
+    content: "after";
+    color: aquamarine;
+}
+li{
+    list-style-type: none;
+}
+.box2 > li::before{
+    content: "#"; color: red;
+}
+.box2 > li::after{
+    content: url(../day07/실습06img/img/bg.jpg);
+}
+/* nth-of-type(번호)  선택자의 요소가 여러개 일때 하나 지정해서 수정*/
+.box2 > li:nth-of-type(1){
+    color: red;
+    font-size: 20px;
+
+}

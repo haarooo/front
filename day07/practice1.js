@@ -103,7 +103,7 @@ let numbers = [5, 3, 4, 1, 2];
 
 힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.*/
 
-let numbers = [5, 3, 4, 1, 2]; //스왑 : let temp = a ; a = b ; b = temp 
+//let numbers = [5, 3, 4, 1, 2]; //스왑 : let temp = a ; a = b ; b = temp 
 // (1) 5 > 3 (2) 3 > 4 (3) 4 > 1 (4) 1 > 2
 // (1) 5 > 3 (2) 3 > 4 (3) 4 > 1 
 // (1) 5 > 3 (2) 3 > 4
@@ -140,6 +140,30 @@ console.log(numbers)
 let products = ['볼펜', '노트', '지우개'];
 
 let stock = [10, 5, 20];*/
+/*
+let products = ['볼펜', '노트', '지우개'];
+let stock = [10, 5, 20];
+let name = prompt("제품명 : ");
+let find = -1 // 찾은 인덱스 저장하는 변수 . -1=못찾음
+
+for( let i = 0 ; i <= products.length -1 ; i++){
+    if(products[i] == name ){
+        find = i; //찾은 i번째 값을 대입
+        break;
+    }
+}
+if(find == -1){console.log("없는 제품명입니다")}
+    else{
+       let count = Number(prompt("수량 : "))
+       if( stock[find] >= count){
+           stock[find] -= count;
+           console.log("구매 완료")
+           console.log(`남은 재고: ${stock[find]}개`);
+       }    else(console.log("재고가 부족합니다"))
+    }
+*/
+
+
 
 
 /*문제 8: 영화 평점 시각화하기
@@ -175,6 +199,39 @@ for 반복문을 사용하여 모든 영화를 순회합니다.
 청설            ★★★★★★☆☆☆☆
 
 */
+//순회 : 배열의 첫인덱스부터 마지막 인덱스까지 하나씩 확인
+//누적합계 : 변수+= 새로운값
+/*
+let movieNames = ['히든페이스', '위키드', '글래디에이터2', '청설'];
+let movieRatings = [8, 4, 7, 6];
+let html = ""
+for( let index = 0 ; index <= movieNames.length -1 ; index++){
+    let movie = movieNames[index]; 
+    html += `<div>${movie}`;
+    
+        let rating = movieRatings[index];
+        for( let r = 1 ; r <= 10 ; r++){
+            if(rating >= r){ html += `<span>●</span>`}
+            else(html += `<span>○</span>`)
+    }
+    html += `</div>`
+}
+
+document.write(html); //최종적으로 반복 작성된 html 출력하기
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*문제 9: 좌석 예약 상태 표시하기
 
@@ -210,7 +267,18 @@ for 반복문을 사용하여 6개의 좌석을 모두 출력합니다.
 
 
 */
-
+/*
+let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석'];
+let html2 = ""
+for(let index = 0 ; index <= seatStatus.length -1 ; index++){
+    html2 += `<span style= "color : ${seatStatus[index] == "빈좌석" ? "blue" : "red"};"> 
+                ${seatStatus[index]} 
+              </span>
+                ${(index+1) % 2 == 0 ?  "<br />" : ""}              
+              `;
+}
+document.write(html2)   
+*/
 
 /*문제 10: 주차 요금 정산하기
 
@@ -262,3 +330,22 @@ HTML에 차량 번호, 주차 시간, 최종 요금을 한 줄씩 출력합니�
 
 
 */
+
+
+let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
+let usageMinutes = [65, 30, 140, 420];
+let html3 = ""
+for( let index = 0 ; index <= carNumbers.length -1 ; index++){
+    let number = carNumbers[index]
+    html3 += `<div> <span> ${ number}</span> `
+    
+    let min = usageMinutes[index];
+    html3 += `<span> ${min}분 주차`
+    let money = 0; 
+    if(min <= 30){ money = 1000; }
+    else(money = parseInt((min - 30)/10) *500 + 1000 )
+    if(money > 20000)(money = 20000)
+    html3 += `<span>${money}원</span>`
+    html3 += `</div>`;
+}
+document.writeln(html3)

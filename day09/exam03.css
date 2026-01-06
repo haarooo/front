@@ -1,0 +1,54 @@
+li{
+    list-style-type: none;
+}
+#head{
+    background-color: beige;
+}
+#head > ul{
+    display: flex; 
+    justify-content: center;
+}
+.menu{
+    padding: 10px 20px;
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    top: 40px; left: 8px;
+    padding: 5px;
+    background-color: beige;
+    display: none ; /* 배치 방법 none = 숨기기 */  
+}
+.menu:hover .sub-menu{ /* menu 눌렀을때 submenu 나타남*/
+    display: block;
+
+}
+#head2{
+    background-color: lightcyan;
+   
+}
+#head2 > ul{
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+}
+#head2 > ul > li{
+    padding: 10px;
+}
+
+.sub-menu2{
+    position: absolute;
+    width: 100%;
+    background-color: lightcyan;
+    top: 40px;
+    display: none;
+}
+#head2 > ul:hover .sub-menu2{
+    display: block;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
