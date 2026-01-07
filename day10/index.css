@@ -3,11 +3,11 @@
 a{ text-decoration: none; color: black; } 
 li{ list-style-type: none;} 
 #wrap{
-    position: relative;
+    
 }
 #header{
     width: 100%;
-    position: relative;
+    
 }
 
 .header-top{
@@ -36,11 +36,12 @@ li{ list-style-type: none;}
     align-items: center;
     padding: 0px 40px;
     
+    
 }
 .header-bottom > ul{
     display: flex;
     width: 80%;
-    position: sticky;
+   
 }
 .header-bottom > ul > li{
     width: 80px; height: 80px;
@@ -206,15 +207,26 @@ li{ list-style-type: none;}
     margin-bottom: 30px;
 }
 #popup{
-    position: fixed;
-    right: 0px; top: 270px;
+  position: fixed;   
+  right: 0px; top: 30%; 
+}
+#popup img{ 
+    width: 20px;
 }
 #popup > ul > li{
-    border: 1px solid #dbdbdb;
-    border-bottom: 1px solid #dbdbdb;
-    padding: 14px;
-    background-color: #f7f7f7;
+  padding: 14px;
+  border: 1px solid #dbdbdb;
+  background-color: #f7f7f7;
+  position: relative;
 }
-#popup > ul > li >img{
-    width: 20px;
+#popup > ul > li > span{
+  position: absolute; top: 15px; right: 40px;
+  display: none;
+  width: 80px; height: 20px;
+  background-color: black; color: white;
+  border-radius: 5px; text-align: center;
+  font-size: 12px;
+}
+#popup > ul > li:hover .popupSub{
+  display: block;
 }
