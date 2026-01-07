@@ -25,3 +25,4 @@ console.log(obj3)
 // in 연산자 , 해당 객체 내 속성이 있는지 확인 true /false 로 대답
 console.log( 'f' in obj3)
 console.log( 'a' in obj3)
+
