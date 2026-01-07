@@ -1,0 +1,130 @@
+*{ padding: 0px; margin: 0px; } 
+*{ box-sizing: border-box; } 
+a{ text-decoration: none; color: black; } 
+li{ list-style-type: none;} 
+
+#header{
+    width: 100%;
+    
+}
+
+.header-top{
+    padding: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.header-top > ul > li >span{
+    padding: 0px 15px;
+}
+.header-top > li > img{
+    width: 20px; margin: 2px 20px;
+}
+
+#header > .header-top > ul{
+    display: flex;
+    justify-content: flex-end ;
+    font-size: 12px;
+}
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+.header-bottom > ul{
+    display: flex;
+    width: 80%;
+}
+.header-bottom > ul > li{
+    width: 80px; height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.search{
+   border-bottom: 1px solid black;
+}
+.search > input{
+    border: none;
+    padding: 5px;
+    width: 130px;
+    background-color: white
+}
+.search > img{
+    width: 15px;
+}
+.main-logo > a >img{
+    width: 155px
+}
+.word > a{
+    color: red;
+}
+.menu{
+    position: relative
+}
+.sub-menu{
+    position: absolute;
+    display: none;
+    top: 50px;
+    background-color: white;
+    width: 80px; 
+    text-align: center;
+    padding: 40px 10px 10px 10px
+}
+.sub-menu > li{
+    font: 12px;
+    margin-bottom: 10px;
+}
+.menu:hover .sub-menu{
+    display: block;
+}
+#main-img > img{
+    width: 100%;
+    height: 562.55px;
+}
+#main > h3{
+    margin-top: 50px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+}
+#main > .멘트{
+    font-size: 10px;
+    text-align: center;
+    color: lightgray;
+    margin: 20px 0px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.items > .item1{
+    width: 380px ;
+    margin: 30px 0px;
+}
+.items > .item1 > .i-img{
+    width: 100%;
+}
+.c-review{
+    display: flex;
+    justify-content: space-between;
+}
+.color > .co{
+    width: 10px; height: 10px;
+    display: inline-block;
+    border: 1px solid #dbdbdb
+}
+.color > .color1{
+    background-color: black;
+}
+.review{
+    font-size: 12px;
+    color: #999999
+}
+.name{
+    font-size: 12px;
+}
