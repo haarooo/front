@@ -1,0 +1,30 @@
+.basic-table{
+    width: 500px;
+    border: 1px solid black;
+}
+.basic-table th , .basic-table td{
+    border: 1px solid black;
+    padding: 10px;
+}
+.basic-table td:nth-child(1){
+    background-color: aqua;
+}
+.basic-table td:nth-child(2){
+    text-align: center;
+}
+.basic-table td[colspan]{
+    text-align: right;
+}
+.style-table{
+    width: 600px;
+    border-collapse: collapse;
+}
+.style-table th , .style-table td{
+    border: 1px solid black;
+}
+.style-table > tbody > tr:nth-of-type(odd){ /* 홀수 짝수 구분해서 스타일 넣기 */
+    background-color: #dbdbdb;
+}
+.style-table > tbody > tr:hover{
+    background-color: gray; color: white;
+}

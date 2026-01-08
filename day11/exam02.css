@@ -1,0 +1,49 @@
+/* width, height 생략하면 상위요소 크기를 따라간다 */ 
+.box{
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.size1{
+    width: 200px; height: 200px;
+}
+/* 최소 사이즈 */
+.size2{ /* 화면이 600px보다 크면 100% 작으면 스크롤 생김 */
+    min-width: 600px;   
+}
+.size3{
+    min-height: 100px;
+    width: 200px;
+}
+/* 최대 사이즈 */
+.size4{
+    max-width: 600px; 
+}
+.size5{
+    max-height: 100px;
+}
+/* 하위 요소의 컨텐츠가 부모 요소의 크기보다 커지면 */
+.size6{
+    width: 200px; height: 100px;
+    overflow: visible;
+}
+.size7{
+    width: 200px; height: 100px;
+    overflow: hidden;
+}  
+.size8{
+    width: 200px; height: 100px;
+    overflow: scroll;
+}  
+.size9{
+    width: 200px; height: 100px;
+    overflow: auto;
+}
+.size10{
+    width: 200px; height: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
