@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    font-family: 'SUIT', 'Poppins', 'Malgun Gothic', Dotum, AppleGothic, Sans-serif;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+#wrap {
+    width: 100%;
+}
+
+/*헤더*/
+#header {
+    width: 100%;/*
+    position: sticky;*/
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#header .header-menu {
+    width: 100%;
+}
+
+.top-header {
+    width: 100%;
+    background-color: #3b1e0d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.top-header b {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.left-top1 {
+    color: rgb(251, 225, 176);
+    padding-right: 10px;
+}
+
+.bottom-header {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.img-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+}
+
+.img-icon > .icon:nth-of-type(1) {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+}
+
+.submenu {
+    position: absolute;
+    right: 65px;
+    top: 10px;
+}
+
+.submenu .icon {
+    width: 22px;
+    height: 22px;
+    display: flex;
+}
+
+.img-icon > a:last-child .icon {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+}
+
+.submenu ul {
+    display: none;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #eee;
+    width: 100px;
+    padding: 10px;
+    right: 1px;
+}
+
+.submenu:hover ul {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    padding: 8px 0;
+    color: #777777;
+    font-size: 11px;
+}
+
+.header-menu > ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.header-menu li {
+    padding: 0 15px;
+    position: relative;
+}
+
+.header-menu > ul > li > a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.header-menu > ul > li:first-child > a {
+    color: #b34a36;
+}
+
+.header-menu li .submenu1 {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 120px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.header-menu li:hover .submenu1 {
+    display: flex;
+}
+
+.header-menu li .submenu1 li a {
+    display: block;
+    padding: 5px 0;
+    font-size: 11px;
+    color: #888;
+}
+
+/*main*/
+#main {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.main-img img {
+    width: 100%;
+    display: block;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 180px;
+}
+
+.main-text .NEW-ARRIVAL h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main-text .sub-content {
+    position: absolute;
+    bottom: 60px;
+    font-size: 13px;
+    color: #555;
+}
+
+/*main-item*/
+.items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.item .img {
+    width: 100%;
+}
+
+.img img {
+    width: 100%;
+    display: block;
+}
+
+.item-content {
+    width: 100%;
+}
+
+.item-title h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    font-size: 13px;
+}
+
+.content {
+    color: #bbb;
+    padding-bottom: 2px;
+}
+
+.item-size {
+    color: rgb(84, 84, 84);
+    padding-bottom: 10px;
+}
+
+.price {
+    color: #999;
+    font-size: 13px;
+    text-decoration: line-through;
+    padding-bottom: 3px;
+}
+
+.sale {
+    font-size: 20px;
+    color: red;
+    width: 50px;
+}
+
+.sale-price {
+    font-size: 20px;
+    width: 100px;
+}
+
+.item-sale {
+    display: flex;
+}
+
+.top-main {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+/*고정 아이콘*/
+.fixed-icons-container {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    z-index: 9999;
+}
+
+.fixed-icons {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-arrow {
+    background: none;
+    box-shadow: none;
+    height: auto;
+}
+
+.type-arrow .fixed-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.type-white {
+    background: #ffffff;
+    border: 1px solid #eee;
+}
+
+.type-gray {
+    background: rgb(158, 158, 158);
+}
+
+.fixed-icon img {
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+/*푸터*/
+#footer{
+    padding: 50px 0px 50px;
+    width: 100%;
+    height: 273.5px;
+    background-color: #f6f7f9;
+    
+}
+.footerinner{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.footer-left{
+    padding: 0px 30px 0px 0px;
+    align-items: center;
+}
+.footer-left > .left-top{
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding-left: 20px;
+    
+}
+.left-top > li{
+    padding-right: 10px;
+}
+.left-top > li > span{
+    padding-left: 10px;
+}
+.left-bottom{
+    font-size: 13px;
+    padding-left: 20px;
+}
+.left-bottom > li{
+    padding-bottom: 4px;
+}
+.left-bottom-1{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.footer-right{
+    display: flex;
+    width: 780px;
+    justify-content: space-between;
+}
+.tel{
+    font-size: 20px;
+}
+.right-1 > h3{
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.right-1 > p{
+    padding-bottom: 10px;
+}
+.right-1 > ul > li{
+    padding-bottom: 4px;
+}
+.right-2 > h3{
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.right-2 > p{
+    padding-bottom: 10px;
+}
+.right-3 > h3{
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.right-3 > p{
+    padding-bottom: 10px;
+}
+
+.right-1 > ul> li{
+    font-size: 13px;   
+}
+.right-2 > p{
+    font-size: 13px;
+}
+.right-3 > ul> li{
+    font-size: 13px;
+}

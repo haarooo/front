@@ -1,0 +1,585 @@
+/* 공통 CSS */
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: 'SUIT', 'Poppins', 'Malgun Gothic', Dotum, AppleGothic, Sans-serif;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+#wrap {
+  width: 100%;
+}
+
+/* 전체 사이즈 */
+#wrap {
+  width: 100%;
+}
+
+
+/* 헤더부분 */
+
+.top-header {
+  background-color: #3b1e0d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.top-header b {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.left-top1 {
+  color: rgb(251, 225, 176);
+  padding-right: 10px;
+}
+
+.img-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.img-icon>.icon:nth-of-type(1) {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+}
+
+.submenu {
+  position: absolute;
+  right: 65px;
+  top: 10px;
+}
+
+.submenu .icon {
+  width: 22px;
+  height: 22px;
+}
+
+.img-icon>.icon:last-child {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+}
+
+.submenu ul {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #eee;
+  width: 100px;
+  padding: 10px;
+}
+
+.submenu:hover ul {
+  display: block;
+}
+
+.submenu li a {
+  display: block;
+  padding: 8px 0;
+  color: #777777;
+  font-size: 11px;
+}
+
+.header-menu>ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.header-menu li {
+  padding-right: 30px;
+}
+
+.header-menu li {
+  position: relative;
+}
+
+.header-menu>ul>li>a {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-menu>ul>li:first-child>a {
+  color: #b34a36;
+}
+
+.header-menu li .submenu1 {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 120px;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.header-menu li:hover .submenu1 {
+  display: flex;
+}
+
+.header-menu li .submenu1 li a {
+  display: block;
+  padding: 5px 0;
+  font-size: 11px;
+  color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* content부분 */
+
+.title-name {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title-name h2 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  padding-left: 100px;
+}
+
+
+.cart-left {
+  flex: 1;
+}
+
+.product-item {
+  display: flex;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  width: 800px;
+
+}
+
+
+
+.chk-box {
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.check {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #333;
+}
+
+.p-img img {
+  width: 100px;
+  height: 120px;
+
+
+}
+
+
+.p-info-area {
+  padding-left: 20px;
+}
+
+
+.p-top-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 400px;
+}
+
+.p-name {
+  font-size: 15px;
+  color: #333;
+  width: 200px;
+}
+
+.btn-delete {
+  font-size: 12px;
+  color: #999;
+  text-decoration: underline;
+
+}
+
+.p-price-line {
+  margin-bottom: 8px;
+}
+
+.p-price-line .origin {
+  text-decoration: line-through;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.p-price-line .sale {
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+/* 옵션 텍스트 */
+.p-option-line {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* 옵션 변경 버튼 */
+.btn-option-change {
+  display: inline-block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  background: #fff;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  border: none;
+
+}
+
+.qty-control-box {
+  display: flex;
+  width: 90px;
+  height: 28px;
+  border: 1px solid #ddd;
+}
+
+.qty-control-box button {
+  width: 28px;
+  background: #f9f9f9;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+.qty-control-box input {
+  width: 34px;
+  border: none;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+
+/* 하단 버튼 */
+.cart-left-bottom-btns {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.cart-left-bottom-btns .btn-s1 {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #333;
+}
+
+
+/* 장바구니 오른쪽 부분 */
+.cart-right {
+  width: 300px;
+}
+
+.order-summary {
+  border: 1px solid #ccc;
+  padding: 50px 20px;
+  position: sticky;
+  top: 30px;
+  background: #fff;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #555;
+}
+
+.price-text {
+  font-weight: 500;
+  color: #333;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.summary-total span:first-child {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.summary-total .total-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 주문 버튼 */
+.order-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.order-buttons button {
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+.btn-order-all {
+  background: #111;
+  color: #fff;
+}
+
+.btn-order-select {
+  background: #fff;
+  color: #111;
+}
+
+/* 네이버 페이 영역 */
+
+.npay {
+  border-top: 1px solid black;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 11px 0 11px 86px !important;
+  zoom: 1 !important;
+
+}
+
+.npay-title {
+  margin: 50px;
+}
+
+.npay-text {
+  display: block !important;
+  position: absolute !important;
+  top: 11px !important;
+  left: 0 !important;
+  width: 79px !important;
+  height: 36px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: url(npay_sp_text.png) no-repeat !important;
+  background-size: 180px auto !important;
+}
+
+.npay-link {
+  display: block !important;
+  height: 35px !important;
+  margin: 0 0 0 3px !important;
+  padding: 0 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 2px !important;
+  background-color: #fff !important;
+  background-repeat: no-repeat !important;
+  background-repeat: no-repeat !important;
+  text-align: center !important;
+  text-decoration: none !important;
+
+  border-color: #00c05a !important;
+  background-image: url(npay_sp_payment.png) !important;
+  background-position: 50% 0 !important;
+  background-repeat: no-repeat !important;
+  background-size: 63px auto !important;
+  border-color: #00c851 !important;
+    background-color: #00de5a !important;
+}
+
+
+
+
+.npay-name {
+  position: relative;
+  border-top: 1px solid gray;
+}
+
+.npay-name>span:nth-child(1) {
+  color: green;
+}
+
+/* 푸터 */
+
+
+#footer {
+  padding: 50px 0px 50px;
+  width: 100%;
+  height: 273.5px;
+  background-color: #f6f7f9;
+
+}
+
+.footerinner {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.footer-left {
+  padding: 0px 30px 0px 0px;
+  align-items: center;
+}
+
+.footer-left>.left-top {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding-left: 20px;
+
+}
+
+.left-top>li {
+  padding-right: 10px;
+}
+
+.left-top>li>span {
+  padding-left: 10px;
+}
+
+.left-bottom {
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.left-bottom>li {
+  padding-bottom: 4px;
+}
+
+.left-bottom-1 {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footer-right {
+  display: flex;
+  width: 780px;
+  justify-content: space-between;
+}
+
+.tel {
+  font-size: 20px;
+}
+
+.right-1>h3 {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.right-1>p {
+  padding-bottom: 10px;
+}
+
+.right-1>ul>li {
+  padding-bottom: 4px;
+}
+
+.right-2>h3 {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.right-2>p {
+  padding-bottom: 10px;
+}
+
+.right-3>h3 {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.right-3>p {
+  padding-bottom: 10px;
+}
+
+.right-1>ul>li {
+  font-size: 13px;
+}
+
+.right-2>p {
+  font-size: 13px;
+}
+
+.right-3>ul>li {
+  font-size: 13px;
+}

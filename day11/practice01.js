@@ -114,6 +114,19 @@ for( let index = 0 ; index <= movies.length -1 ; index++){
 }
 console.log(movieTitles)
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 문제 7: 데이터 그룹화하기
 
 // 다음 team 배열을 department를 기준으로 그룹화하여, 아래 result와 같은 형태로 만드시오.
