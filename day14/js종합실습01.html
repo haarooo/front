@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="js종합실습01.js"></script>
+    <link rel="stylesheet" href="js종합실습01.css"/>
+</head>
+<body>
+    <div id="wrap">
+    <div id="main">
+        <div id="header">
+            <select class="Select" onchange="func8()">
+
+                 <option value="">카테고리 선택하세요.</option>
+
+                <option value="drink">음료</option>
+                <option value="chips">과자</option>
+            </select>
+            <input type="text" placeholder="제품명"/> 
+            <input type="text" placeholder="제품가격"/>
+            <input class="파일" type="file" placeholder="선택된 파일 없음"/>
+            <button class="등록" type="button"> 등록 </button>
+        </div>
+
+        <table id="content">
+            <thead>
+            <th>이미지</th> <th>카테고리명</th> <th> 상품명 </th> <th>가격</th> <th>등록일</th> <th>비고</th>
+            </thead>
+            
+            <tbody>
+            <tr>
+                <td><img src="./100x100.svg"/><td>1</td> <td> 코카콜라 </td> <td> 1,000 </td> <td> 2025-06-17 
+                </td> <td><button class="btn b1" type="button">삭제</button><button class="btn b2" type="button">수정</button> </td>
+            </tr>
+
+            <tr>
+                <td><img src="./100x100.svg"/><td>2</td></td> <td> 새우깡 </td> <td> 1,200 </td> <td> 2025-06-18 
+                </td> <td><button class="btn b1" type="button">삭제</button><button class="btn b2" type="button">수정</button> </td>
+            </tr>
+
+            <tr>
+                <td><img src="./100x100.svg"/><td>1</td></td> <td> 칠성사이다 </td> <td> 900 </td> <td> 2025-06-19 
+                </td> <td><button class="btn b1" type="button">삭제</button><button class="btn b2" type="button">수정</button> </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</body>
+</html>

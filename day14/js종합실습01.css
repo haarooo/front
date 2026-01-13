@@ -1,0 +1,86 @@
+*{ padding: 0px; margin: 0px; } 
+*{ box-sizing: border-box; } 
+a{ text-decoration: none; color: black; } 
+li{ list-style-type: none;}
+
+#wrap{
+    width: 1200px;
+    display: flex;
+
+}
+#header{
+    width: 100%;
+    padding: 10px;
+    margin-left: 80px; 
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    
+}
+.Select , input {
+    margin-right: 45px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+.등록{
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+#content{ 
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+
+
+thead{
+    text-align: center;
+   border-bottom: 1px solid #bdbdbd;
+   
+}
+th{
+    background-color: #f6f7f9;
+    padding: 10px;
+    
+}
+tbody{
+    text-align: center;
+    padding: px;
+}
+tbody > tr > td > .btn{
+    border: none;
+    border-radius: 8px;
+}
+.b1{
+    background-color: rgba( 250,25,25, 0.2);
+    color: red;
+    font-weight: bold;
+}
+.b2{
+    background-color: rgba( 25,25,250, 0.2);
+    color: blue;
+    font-weight: bold;
+}
+td > img{
+    padding: 10px;
+    
+}
+td{
+    font-weight: bold;
+}
+td > button{
+    padding: 7px 15px 7px 15px;
+    margin-left: 8px;
+}
+tr{
+    border-bottom: 1px solid #eeeeee;
+}
+#content{
+    border-collapse: collapse;
+}
