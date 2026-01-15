@@ -177,8 +177,6 @@ function renderList() {
 }
 
 // 함수 호출
-renderList();
-
 /*실습 9: 입장료 계산 함수
 
 임의의 나이(age)를 매개변수로 받아 입장료를 반환하는 getTicketPrice 함수를 만드시오.

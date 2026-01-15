@@ -30,6 +30,7 @@ function partPrint(){
     dept.innerHTML = html ;
 }
 
+
 // 2. 삭제함수
 function partDelete(pcode){
     for(let index = 0 ; index <= partAry.length -1 ; index++){
