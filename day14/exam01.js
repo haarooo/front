@@ -75,8 +75,3 @@ function func9(){
     const printdom = document.querySelector("#productPrint")
     printdom.innerHTML = products
 }
-
-
-
-
-///asdasd
